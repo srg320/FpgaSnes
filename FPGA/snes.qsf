@@ -1,0 +1,764 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 11.0 Build 157 04/27/2011 SJ Full Version
+# Date created = 10:47:50  August 06, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		snes_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C55F484C8
+set_global_assignment -name TOP_LEVEL_ENTITY main
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 11.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:47:50  AUGUST 06, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "11.1 SP1"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_100
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MISO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MOSI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_CE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_DQ[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_OE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_WE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_BHE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_BLE_N
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_A18 -to CART_SRAM_ADDR[22]
+set_location_assignment PIN_B18 -to CART_SRAM_ADDR[21]
+set_location_assignment PIN_B16 -to CART_SRAM_ADDR[20]
+set_location_assignment PIN_A19 -to CART_SRAM_ADDR[19]
+set_location_assignment PIN_B19 -to CART_SRAM_ADDR[18]
+set_location_assignment PIN_E10 -to CART_SRAM_ADDR[17]
+set_location_assignment PIN_C13 -to CART_SRAM_ADDR[16]
+set_location_assignment PIN_A13 -to CART_SRAM_ADDR[15]
+set_location_assignment PIN_B13 -to CART_SRAM_ADDR[14]
+set_location_assignment PIN_A14 -to CART_SRAM_ADDR[13]
+set_location_assignment PIN_B14 -to CART_SRAM_ADDR[12]
+set_location_assignment PIN_A15 -to CART_SRAM_ADDR[11]
+set_location_assignment PIN_B15 -to CART_SRAM_ADDR[10]
+set_location_assignment PIN_A16 -to CART_SRAM_ADDR[9]
+set_location_assignment PIN_A20 -to CART_SRAM_ADDR[8]
+set_location_assignment PIN_B20 -to CART_SRAM_ADDR[7]
+set_location_assignment PIN_D17 -to CART_SRAM_ADDR[6]
+set_location_assignment PIN_C18 -to CART_SRAM_ADDR[5]
+set_location_assignment PIN_D18 -to CART_SRAM_ADDR[4]
+set_location_assignment PIN_C19 -to CART_SRAM_ADDR[3]
+set_location_assignment PIN_D19 -to CART_SRAM_ADDR[2]
+set_location_assignment PIN_C17 -to CART_SRAM_ADDR[1]
+set_location_assignment PIN_E11 -to CART_SRAM_ADDR[0]
+set_location_assignment PIN_A17 -to CART_SRAM_CE_N
+set_location_assignment PIN_F11 -to CART_SRAM_DQ[7]
+set_location_assignment PIN_E12 -to CART_SRAM_DQ[6]
+set_location_assignment PIN_F13 -to CART_SRAM_DQ[5]
+set_location_assignment PIN_D13 -to CART_SRAM_DQ[4]
+set_location_assignment PIN_E13 -to CART_SRAM_DQ[3]
+set_location_assignment PIN_E14 -to CART_SRAM_DQ[2]
+set_location_assignment PIN_C15 -to CART_SRAM_DQ[1]
+set_location_assignment PIN_D15 -to CART_SRAM_DQ[0]
+set_location_assignment PIN_E15 -to CART_SRAM_OE_N
+set_location_assignment PIN_B17 -to CART_SRAM_WE_N
+set_location_assignment PIN_AA11 -to CLOCK_100
+set_location_assignment PIN_H4 -to LCD_B[4]
+set_location_assignment PIN_J5 -to LCD_B[3]
+set_location_assignment PIN_J3 -to LCD_B[2]
+set_location_assignment PIN_J4 -to LCD_B[1]
+set_location_assignment PIN_D1 -to LCD_B[0]
+set_location_assignment PIN_H5 -to LCD_DCLK
+set_location_assignment PIN_E3 -to LCD_DE
+set_location_assignment PIN_G4 -to LCD_DISP
+set_location_assignment PIN_E2 -to LCD_G[4]
+set_location_assignment PIN_E1 -to LCD_G[3]
+set_location_assignment PIN_F2 -to LCD_G[2]
+set_location_assignment PIN_F1 -to LCD_G[1]
+set_location_assignment PIN_G3 -to LCD_G[0]
+set_location_assignment PIN_G5 -to LCD_HS
+set_location_assignment PIN_H3 -to LCD_R[4]
+set_location_assignment PIN_H1 -to LCD_R[3]
+set_location_assignment PIN_H2 -to LCD_R[2]
+set_location_assignment PIN_J1 -to LCD_R[1]
+set_location_assignment PIN_J2 -to LCD_R[0]
+set_location_assignment PIN_E4 -to LCD_VS
+set_location_assignment PIN_J7 -to MISO
+set_location_assignment PIN_L6 -to MOSI
+set_location_assignment PIN_M6 -to SCK
+set_location_assignment PIN_J6 -to SS
+set_location_assignment PIN_F17 -to VSRAM_ADDR[17]
+set_location_assignment PIN_E16 -to VSRAM_ADDR[16]
+set_location_assignment PIN_D20 -to VSRAM_ADDR[15]
+set_location_assignment PIN_C20 -to VSRAM_ADDR[14]
+set_location_assignment PIN_H22 -to VSRAM_ADDR[13]
+set_location_assignment PIN_H21 -to VSRAM_ADDR[12]
+set_location_assignment PIN_J22 -to VSRAM_ADDR[11]
+set_location_assignment PIN_J21 -to VSRAM_ADDR[10]
+set_location_assignment PIN_K22 -to VSRAM_ADDR[9]
+set_location_assignment PIN_K21 -to VSRAM_ADDR[8]
+set_location_assignment PIN_J19 -to VSRAM_ADDR[7]
+set_location_assignment PIN_J20 -to VSRAM_ADDR[6]
+set_location_assignment PIN_K19 -to VSRAM_ADDR[5]
+set_location_assignment PIN_F20 -to VSRAM_ADDR[4]
+set_location_assignment PIN_F22 -to VSRAM_ADDR[3]
+set_location_assignment PIN_F21 -to VSRAM_ADDR[2]
+set_location_assignment PIN_E22 -to VSRAM_ADDR[1]
+set_location_assignment PIN_E21 -to VSRAM_ADDR[0]
+set_location_assignment PIN_H19 -to VSRAM_BHE_N
+set_location_assignment PIN_K18 -to VSRAM_BLE_N
+set_location_assignment PIN_D22 -to VSRAM_CE_N
+set_location_assignment PIN_K17 -to VSRAM_DQ[15]
+set_location_assignment PIN_J17 -to VSRAM_DQ[14]
+set_location_assignment PIN_J18 -to VSRAM_DQ[13]
+set_location_assignment PIN_H18 -to VSRAM_DQ[12]
+set_location_assignment PIN_M21 -to VSRAM_DQ[11]
+set_location_assignment PIN_M22 -to VSRAM_DQ[10]
+set_location_assignment PIN_L21 -to VSRAM_DQ[9]
+set_location_assignment PIN_L22 -to VSRAM_DQ[8]
+set_location_assignment PIN_G17 -to VSRAM_DQ[7]
+set_location_assignment PIN_G18 -to VSRAM_DQ[6]
+set_location_assignment PIN_H17 -to VSRAM_DQ[5]
+set_location_assignment PIN_B21 -to VSRAM_DQ[4]
+set_location_assignment PIN_B22 -to VSRAM_DQ[3]
+set_location_assignment PIN_C21 -to VSRAM_DQ[2]
+set_location_assignment PIN_C22 -to VSRAM_DQ[1]
+set_location_assignment PIN_D21 -to VSRAM_DQ[0]
+set_location_assignment PIN_H20 -to VSRAM_OE_N
+set_location_assignment PIN_F19 -to VSRAM_WE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_CE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_OE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_WE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[22]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[21]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[20]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[19]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[18]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_ADDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_CE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_DQ[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_DQ[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_DQ[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_DQ[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_DQ[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_DQ[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_DQ[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_DQ[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_OE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM_WE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_B[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_B[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_B[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_B[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_B[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_DCLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_DE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_DISP
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_G[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_G[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_G[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_G[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_G[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_HS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_R[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_R[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_R[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_R[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_R[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LCD_VS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VSRAM_ADDR[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_ADDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_CE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_DQ[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_DQ[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_DQ[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_DQ[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_DQ[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_DQ[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_DQ[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_DQ[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_OE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_WE_N
+set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_FLASH_NCE_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS ON
+set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS "NORMAL COMPILATION"
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name RAPID_RECOMPILE_MODE OFF
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_1993
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name ENABLE_DRC_SETTINGS ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING ON
+set_global_assignment -name ROUTER_LCELL_INSERTION_AND_LOGIC_DUPLICATION ON
+set_global_assignment -name ROUTER_TIMING_OPTIMIZATION_LEVEL MAXIMUM
+set_global_assignment -name AUTO_PACKED_REGISTERS_STRATIXII NORMAL
+set_global_assignment -name ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP ON
+set_global_assignment -name MUX_RESTRUCTURE OFF
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING OFF
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS OFF
+set_global_assignment -name ROUTER_CLOCKING_TOPOLOGY_ANALYSIS ON
+set_global_assignment -name SYNCHRONIZATION_REGISTER_CHAIN_LENGTH 3
+set_global_assignment -name STATE_MACHINE_PROCESSING AUTO
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "pll:pll|altpll:altpll_component|pll_altpll1:auto_generated|wire_pll1_clk[2]" -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to WSRAM_CE_N -entity snes -disable
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to ASRAM_CE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to ASRAM_OE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to ASRAM_WE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CART_SRAM_CE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CART_SRAM_OE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CART_SRAM_WE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to VSRAM_BHE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to VSRAM_BLE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to VSRAM_CE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to VSRAM_OE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to VSRAM_WE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to WSRAM_OE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to WSRAM_WE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to ASRAM_DQ -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CART_SRAM_DQ -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to VSRAM_DQ -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to WSRAM_DQ -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to ASRAM_ADDR -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to CART_SRAM_ADDR -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to VSRAM_ADDR -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to WSRAM_ADDR -entity snes -disable
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to CART_SRAM_DQ -entity snes -disable
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to VSRAM_DQ -entity snes -disable
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to WSRAM_DQ -entity snes -disable
+set_instance_assignment -name FAST_INPUT_REGISTER ON -to ASRAM_DQ -entity snes -disable
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "pll:pll|altpll:altpll_component|pll_altpll1:auto_generated|wire_pll1_clk[0]" -entity snes -disable
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "pll:pll|altpll:altpll_component|pll_altpll1:auto_generated|wire_pll1_clk[1]" -entity snes -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to JOY_STRB
+set_location_assignment PIN_G11 -to JOY_STRB
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LRCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SDAT
+set_location_assignment PIN_Y13 -to SDAT
+set_location_assignment PIN_Y14 -to LRCK
+set_location_assignment PIN_W13 -to BCK
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name FITTER_EARLY_TIMING_ESTIMATE_MODE PESSIMISTIC
+set_location_assignment PIN_Y2 -to ASRAM_ADDR[20]
+set_location_assignment PIN_R4 -to ASRAM_ADDR[19]
+set_location_assignment PIN_Y1 -to ASRAM_ADDR[18]
+set_location_assignment PIN_W2 -to ASRAM_ADDR[17]
+set_location_assignment PIN_W1 -to ASRAM_ADDR[16]
+set_location_assignment PIN_V2 -to ASRAM_ADDR[15]
+set_location_assignment PIN_V3 -to ASRAM_ADDR[14]
+set_location_assignment PIN_V6 -to ASRAM_ADDR[13]
+set_location_assignment PIN_T5 -to ASRAM_ADDR[12]
+set_location_assignment PIN_T3 -to ASRAM_ADDR[11]
+set_location_assignment PIN_T4 -to ASRAM_ADDR[10]
+set_location_assignment PIN_R3 -to ASRAM_ADDR[9]
+set_location_assignment PIN_P4 -to ASRAM_ADDR[8]
+set_location_assignment PIN_P3 -to ASRAM_ADDR[7]
+set_location_assignment PIN_P5 -to ASRAM_ADDR[6]
+set_location_assignment PIN_N5 -to ASRAM_ADDR[5]
+set_location_assignment PIN_P1 -to ASRAM_ADDR[4]
+set_location_assignment PIN_N2 -to ASRAM_ADDR[3]
+set_location_assignment PIN_N1 -to ASRAM_ADDR[2]
+set_location_assignment PIN_M2 -to ASRAM_ADDR[1]
+set_location_assignment PIN_M1 -to ASRAM_ADDR[0]
+set_location_assignment PIN_P2 -to ASRAM_CE_N
+set_location_assignment PIN_U2 -to ASRAM_DQ[7]
+set_location_assignment PIN_U1 -to ASRAM_DQ[6]
+set_location_assignment PIN_V5 -to ASRAM_DQ[5]
+set_location_assignment PIN_V4 -to ASRAM_DQ[4]
+set_location_assignment PIN_M4 -to ASRAM_DQ[3]
+set_location_assignment PIN_M5 -to ASRAM_DQ[2]
+set_location_assignment PIN_R2 -to ASRAM_DQ[1]
+set_location_assignment PIN_R1 -to ASRAM_DQ[0]
+set_location_assignment PIN_V1 -to ASRAM_OE_N
+set_location_assignment PIN_M3 -to ASRAM_WE_N
+set_location_assignment PIN_P17 -to WSRAM_ADDR[16]
+set_location_assignment PIN_N17 -to WSRAM_ADDR[15]
+set_location_assignment PIN_N18 -to WSRAM_ADDR[14]
+set_location_assignment PIN_V16 -to WSRAM_ADDR[13]
+set_location_assignment PIN_U16 -to WSRAM_ADDR[12]
+set_location_assignment PIN_U17 -to WSRAM_ADDR[9]
+set_location_assignment PIN_W20 -to WSRAM_ADDR[11]
+set_location_assignment PIN_W19 -to WSRAM_ADDR[10]
+set_location_assignment PIN_T18 -to WSRAM_ADDR[8]
+set_location_assignment PIN_V22 -to WSRAM_ADDR[7]
+set_location_assignment PIN_U21 -to WSRAM_ADDR[6]
+set_location_assignment PIN_U22 -to WSRAM_ADDR[5]
+set_location_assignment PIN_R21 -to WSRAM_ADDR[4]
+set_location_assignment PIN_R22 -to WSRAM_ADDR[3]
+set_location_assignment PIN_P21 -to WSRAM_ADDR[2]
+set_location_assignment PIN_P22 -to WSRAM_ADDR[1]
+set_location_assignment PIN_N21 -to WSRAM_ADDR[0]
+set_location_assignment PIN_W22 -to WSRAM_BHE_N
+set_location_assignment PIN_W21 -to WSRAM_BLE_N
+set_location_assignment PIN_N22 -to WSRAM_CE_N
+set_location_assignment PIN_M19 -to WSRAM_DQ[7]
+set_location_assignment PIN_M20 -to WSRAM_DQ[6]
+set_location_assignment PIN_N19 -to WSRAM_DQ[5]
+set_location_assignment PIN_N20 -to WSRAM_DQ[4]
+set_location_assignment PIN_R18 -to WSRAM_DQ[3]
+set_location_assignment PIN_P20 -to WSRAM_DQ[2]
+set_location_assignment PIN_R19 -to WSRAM_DQ[1]
+set_location_assignment PIN_R20 -to WSRAM_DQ[0]
+set_location_assignment PIN_V21 -to WSRAM_OE_N
+set_location_assignment PIN_R17 -to WSRAM_WE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_BHE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to WSRAM_BLE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[18]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[19]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[20]
+set_global_assignment -name ALLOW_POWER_UP_DONT_CARE OFF
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to ASRAM_ADDR -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to VSRAM_WE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to VSRAM_OE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to VSRAM_CE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to VSRAM_BLE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to VSRAM_BHE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to VSRAM_ADDR -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to CART_SRAM_WE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to CART_SRAM_OE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to CART_SRAM_CE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to CART_SRAM_ADDR -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to ASRAM_WE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to ASRAM_OE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to ASRAM_CE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to WSRAM_WE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to WSRAM_OE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to WSRAM_CE_N -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to WSRAM_ADDR -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to ASRAM_DQ -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to WSRAM_DQ -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to VSRAM_DQ -entity snes -disable
+set_instance_assignment -name FAST_OUTPUT_ENABLE_REGISTER ON -to CART_SRAM_DQ -entity snes -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[22]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[21]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[20]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[19]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[18]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_ADDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_CE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_DQ[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_DQ[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_DQ[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_DQ[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_DQ[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_DQ[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_DQ[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_DQ[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_OE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CART_SRAM2_WE_N
+set_location_assignment PIN_B6 -to CART_SRAM2_ADDR[22]
+set_location_assignment PIN_A6 -to CART_SRAM2_ADDR[21]
+set_location_assignment PIN_A4 -to CART_SRAM2_ADDR[20]
+set_location_assignment PIN_B7 -to CART_SRAM2_ADDR[19]
+set_location_assignment PIN_A7 -to CART_SRAM2_ADDR[18]
+set_location_assignment PIN_C4 -to CART_SRAM2_ADDR[17]
+set_location_assignment PIN_D2 -to CART_SRAM2_ADDR[16]
+set_location_assignment PIN_C2 -to CART_SRAM2_ADDR[15]
+set_location_assignment PIN_C1 -to CART_SRAM2_ADDR[14]
+set_location_assignment PIN_B1 -to CART_SRAM2_ADDR[13]
+set_location_assignment PIN_B2 -to CART_SRAM2_ADDR[12]
+set_location_assignment PIN_B3 -to CART_SRAM2_ADDR[11]
+set_location_assignment PIN_A3 -to CART_SRAM2_ADDR[10]
+set_location_assignment PIN_B4 -to CART_SRAM2_ADDR[9]
+set_location_assignment PIN_B8 -to CART_SRAM2_ADDR[8]
+set_location_assignment PIN_A8 -to CART_SRAM2_ADDR[7]
+set_location_assignment PIN_B9 -to CART_SRAM2_ADDR[6]
+set_location_assignment PIN_A9 -to CART_SRAM2_ADDR[5]
+set_location_assignment PIN_B10 -to CART_SRAM2_ADDR[4]
+set_location_assignment PIN_A10 -to CART_SRAM2_ADDR[3]
+set_location_assignment PIN_C10 -to CART_SRAM2_ADDR[2]
+set_location_assignment PIN_E9 -to CART_SRAM2_ADDR[1]
+set_location_assignment PIN_E6 -to CART_SRAM2_ADDR[0]
+set_location_assignment PIN_B5 -to CART_SRAM2_CE_N
+set_location_assignment PIN_E7 -to CART_SRAM2_DQ[7]
+set_location_assignment PIN_C6 -to CART_SRAM2_DQ[6]
+set_location_assignment PIN_D6 -to CART_SRAM2_DQ[5]
+set_location_assignment PIN_C7 -to CART_SRAM2_DQ[4]
+set_location_assignment PIN_D7 -to CART_SRAM2_DQ[3]
+set_location_assignment PIN_C8 -to CART_SRAM2_DQ[2]
+set_location_assignment PIN_D8 -to CART_SRAM2_DQ[1]
+set_location_assignment PIN_G7 -to CART_SRAM2_DQ[0]
+set_location_assignment PIN_E8 -to CART_SRAM2_OE_N
+set_location_assignment PIN_A5 -to CART_SRAM2_WE_N
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "DSP:DSP|INT_CLK" -entity snes -disable
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "ppu:ppu|INT_CLK" -entity snes -disable
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "SCPU:CPU|INT_CLK" -entity snes -disable
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_DQ[0] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_DQ[1] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_DQ[2] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_DQ[3] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_DQ[4] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_DQ[5] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_DQ[6] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_DQ[7] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[0] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[1] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[2] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[3] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[4] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[5] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[6] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[7] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[8] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[9] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[10] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[11] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[12] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[13] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[14] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_DQ[15] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_DQ[0] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_DQ[1] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_DQ[2] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_DQ[3] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_DQ[4] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_DQ[5] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_DQ[6] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_DQ[7] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_DQ[0] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_DQ[1] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_DQ[2] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_DQ[3] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_DQ[4] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_DQ[5] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_DQ[6] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_DQ[7] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[19] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[20] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[18] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[10] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[11] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[12] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[13] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[14] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[15] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[16] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[17] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_WE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_OE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_CE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_BLE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_BHE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[0] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[1] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[2] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[3] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[4] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[5] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[6] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[7] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[8] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[9] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[10] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[11] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[12] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[13] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[14] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[15] -disable
+set_instance_assignment -name SLEW_RATE 2 -to WSRAM_ADDR[16] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_WE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_OE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_CE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_BLE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_BHE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[0] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[1] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[2] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[3] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[4] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[5] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[6] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[7] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[8] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[9] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[10] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[11] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[12] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[13] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[14] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[15] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[16] -disable
+set_instance_assignment -name SLEW_RATE 2 -to VSRAM_ADDR[17] -disable
+set_instance_assignment -name SLEW_RATE 2 -to SDAT -disable
+set_instance_assignment -name SLEW_RATE 2 -to MISO -disable
+set_instance_assignment -name SLEW_RATE 2 -to LRCK -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_VS -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_R[0] -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_R[1] -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_R[2] -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_R[3] -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_R[4] -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_HS -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_G[0] -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_G[1] -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_G[2] -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_G[3] -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_G[4] -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_DISP -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_DE -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_DCLK -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_B[0] -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_B[1] -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_B[2] -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_B[3] -disable
+set_instance_assignment -name SLEW_RATE 2 -to LCD_B[4] -disable
+set_instance_assignment -name SLEW_RATE 2 -to JOY_STRB -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_WE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_OE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_CE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[0] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[1] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[2] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[3] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[4] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[5] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[6] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[7] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[8] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[9] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[10] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[11] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[12] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[13] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[14] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[15] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[16] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[17] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[18] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[19] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[20] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[21] -disable
+set_instance_assignment -name SLEW_RATE 2 -to CART_SRAM_ADDR[22] -disable
+set_instance_assignment -name SLEW_RATE 2 -to BCK -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_WE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_OE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_CE_N -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[0] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[1] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[2] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[3] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[4] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[5] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[6] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[7] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[8] -disable
+set_instance_assignment -name SLEW_RATE 2 -to ASRAM_ADDR[9] -disable
+set_location_assignment PIN_N16 -to RESET_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RESET_N
+set_location_assignment PIN_F16 -to JOY1_DI[0]
+set_location_assignment PIN_G10 -to JOY1_CLK
+set_location_assignment PIN_G21 -to CLOCK_100[1]
+set_location_assignment PIN_A12 -to CLOCK_100[2]
+set_global_assignment -name VHDL_FILE 65C816/P65C816.vhd
+set_global_assignment -name VHDL_FILE 65C816/P65816_pkg.vhd
+set_global_assignment -name VHDL_FILE 65C816/MCode.vhd
+set_global_assignment -name VHDL_FILE 65C816/ALU.vhd
+set_global_assignment -name VHDL_FILE 65C816/AddSubBCD.vhd
+set_global_assignment -name VHDL_FILE 65C816/AddrGen.vhd
+set_global_assignment -name VHDL_FILE SPC700/SPC700.vhd
+set_global_assignment -name VHDL_FILE SPC700/SPC700_pkg.vhd
+set_global_assignment -name VHDL_FILE SPC700/MulDiv.vhd
+set_global_assignment -name VHDL_FILE SPC700/MCode.vhd
+set_global_assignment -name VHDL_FILE SPC700/ALU.vhd
+set_global_assignment -name VHDL_FILE SPC700/AddSub.vhd
+set_global_assignment -name VHDL_FILE SPC700/BCDAdj.vhd
+set_global_assignment -name VHDL_FILE SPC700/AddrGen.vhd
+set_global_assignment -name VHDL_FILE main.vhd
+set_global_assignment -name VHDL_FILE snes.vhd
+set_global_assignment -name VHDL_FILE cpu.vhd
+set_global_assignment -name VHDL_FILE swram.vhd
+set_global_assignment -name VHDL_FILE ppu.vhd
+set_global_assignment -name VHDL_FILE PPU_PKG.vhd
+set_global_assignment -name VHDL_FILE ppuoam.vhd
+set_global_assignment -name VHDL_FILE ppuhoam.vhd
+set_global_assignment -name VHDL_FILE SMP.vhd
+set_global_assignment -name VHDL_FILE DSP.vhd
+set_global_assignment -name VHDL_FILE DSP_PKG.vhd
+set_global_assignment -name VHDL_FILE spi.vhd
+set_global_assignment -name VHDL_FILE mcu.vhd
+set_global_assignment -name VHDL_FILE lcd.vhd
+set_global_assignment -name VHDL_FILE lcdbuf.vhd
+set_global_assignment -name QIP_FILE ddio.qip
+set_global_assignment -name VHDL_FILE pll.vhd
+set_global_assignment -name VHDL_FILE apupll.vhd
+set_global_assignment -name VHDL_FILE LHRomMap.vhd
+set_global_assignment -name VHDL_FILE DSPMap.vhd
+set_global_assignment -name QIP_FILE dspnpll.qip
+set_global_assignment -name VHDL_FILE SDD1Map.vhd
+set_global_assignment -name VHDL_FILE CX4Map.vhd
+set_global_assignment -name VHDL_FILE cx4pll.vhd
+set_global_assignment -name VHDL_FILE chip/DSP/DSPn.vhd
+set_global_assignment -name VHDL_FILE chip/DSP/prom.vhd
+set_global_assignment -name VHDL_FILE chip/DSP/drom.vhd
+set_global_assignment -name VHDL_FILE chip/DSP/dram.vhd
+set_global_assignment -name VHDL_FILE chip/CX4/prom.vhd
+set_global_assignment -name VHDL_FILE chip/CX4/drom.vhd
+set_global_assignment -name VHDL_FILE chip/CX4/dram.vhd
+set_global_assignment -name VHDL_FILE chip/CX4/CX4.vhd
+set_global_assignment -name VHDL_FILE chip/SDD1/infifo.vhd
+set_global_assignment -name VHDL_FILE chip/SDD1/InputMgr.vhd
+set_global_assignment -name VHDL_FILE chip/SDD1/Decoder.vhd
+set_global_assignment -name VHDL_FILE chip/SDD1/SDD1.vhd
+set_global_assignment -name VHDL_FILE chip/SA1/SA1.vhd
+set_global_assignment -name VHDL_FILE chip/SA1/iram.vhd
+set_global_assignment -name SDC_FILE snes.sdc
+set_global_assignment -name VHDL_FILE test/snes_tb.vhd
+set_global_assignment -name VHDL_FILE test/ram.vhd
+set_global_assignment -name VHDL_FILE test/Memory.vhd
+set_global_assignment -name VHDL_FILE test/Util_package.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
