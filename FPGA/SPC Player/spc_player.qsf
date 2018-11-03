@@ -1,0 +1,155 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Full Version
+# Date created = 20:50:12  November 02, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		spcmain_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C55F484C8
+set_global_assignment -name TOP_LEVEL_ENTITY main
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "11.1 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:50:12  NOVEMBER 02, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "11.1 SP1"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[20]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[19]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[18]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_ADDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_CE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_DQ[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_OE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ASRAM_WE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to BCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_100[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_100[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_100[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LRCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MISO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MOSI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RESET_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SDAT
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SS
+set_location_assignment PIN_Y2 -to ASRAM_ADDR[20]
+set_location_assignment PIN_R4 -to ASRAM_ADDR[19]
+set_location_assignment PIN_Y1 -to ASRAM_ADDR[18]
+set_location_assignment PIN_W2 -to ASRAM_ADDR[17]
+set_location_assignment PIN_W1 -to ASRAM_ADDR[16]
+set_location_assignment PIN_V2 -to ASRAM_ADDR[15]
+set_location_assignment PIN_V3 -to ASRAM_ADDR[14]
+set_location_assignment PIN_V6 -to ASRAM_ADDR[13]
+set_location_assignment PIN_T5 -to ASRAM_ADDR[12]
+set_location_assignment PIN_T3 -to ASRAM_ADDR[11]
+set_location_assignment PIN_T4 -to ASRAM_ADDR[10]
+set_location_assignment PIN_R3 -to ASRAM_ADDR[9]
+set_location_assignment PIN_P4 -to ASRAM_ADDR[8]
+set_location_assignment PIN_P3 -to ASRAM_ADDR[7]
+set_location_assignment PIN_P5 -to ASRAM_ADDR[6]
+set_location_assignment PIN_N5 -to ASRAM_ADDR[5]
+set_location_assignment PIN_P1 -to ASRAM_ADDR[4]
+set_location_assignment PIN_N2 -to ASRAM_ADDR[3]
+set_location_assignment PIN_N1 -to ASRAM_ADDR[2]
+set_location_assignment PIN_M2 -to ASRAM_ADDR[1]
+set_location_assignment PIN_M1 -to ASRAM_ADDR[0]
+set_location_assignment PIN_P2 -to ASRAM_CE_N
+set_location_assignment PIN_U2 -to ASRAM_DQ[7]
+set_location_assignment PIN_U1 -to ASRAM_DQ[6]
+set_location_assignment PIN_V5 -to ASRAM_DQ[5]
+set_location_assignment PIN_V4 -to ASRAM_DQ[4]
+set_location_assignment PIN_M4 -to ASRAM_DQ[3]
+set_location_assignment PIN_M5 -to ASRAM_DQ[2]
+set_location_assignment PIN_R2 -to ASRAM_DQ[1]
+set_location_assignment PIN_R1 -to ASRAM_DQ[0]
+set_location_assignment PIN_V1 -to ASRAM_OE_N
+set_location_assignment PIN_M3 -to ASRAM_WE_N
+set_location_assignment PIN_W13 -to BCK
+set_location_assignment PIN_A12 -to CLOCK_100[2]
+set_location_assignment PIN_G21 -to CLOCK_100[1]
+set_location_assignment PIN_AA11 -to CLOCK_100[0]
+set_location_assignment PIN_Y14 -to LRCK
+set_location_assignment PIN_J7 -to MISO
+set_location_assignment PIN_L6 -to MOSI
+set_location_assignment PIN_N16 -to RESET_N
+set_location_assignment PIN_M6 -to SCK
+set_location_assignment PIN_Y13 -to SDAT
+set_location_assignment PIN_J6 -to SS
+set_global_assignment -name VHDL_FILE main.vhd
+set_global_assignment -name VHDL_FILE ../SPC700/SPC700_pkg.vhd
+set_global_assignment -name VHDL_FILE ../SPC700/SPC700.vhd
+set_global_assignment -name VHDL_FILE ../SPC700/MulDiv.vhd
+set_global_assignment -name VHDL_FILE ../SPC700/MCode.vhd
+set_global_assignment -name VHDL_FILE ../SPC700/BCDAdj.vhd
+set_global_assignment -name VHDL_FILE ../SPC700/ALU.vhd
+set_global_assignment -name VHDL_FILE ../SPC700/AddSub.vhd
+set_global_assignment -name VHDL_FILE ../SPC700/AddrGen.vhd
+set_global_assignment -name VHDL_FILE ../SMP.vhd
+set_global_assignment -name VHDL_FILE ../DSP_PKG.vhd
+set_global_assignment -name VHDL_FILE ../DSP.vhd
+set_global_assignment -name VHDL_FILE ../spi.vhd
+set_global_assignment -name VHDL_FILE ../mcu.vhd
+set_global_assignment -name VHDL_FILE ../pll.vhd
+set_global_assignment -name VHDL_FILE ../apupll.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
