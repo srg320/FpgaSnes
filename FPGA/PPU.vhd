@@ -210,11 +210,6 @@ signal SPR_PIX_DATA, SPR_PIX_DATA_BUF : std_logic_vector(8 downto 0);
 signal SPR_PIXEL_X : unsigned(7 downto 0);
 signal OBJ_VRAM_ADDR : std_logic_vector(15 downto 0);
 
---type Oam_t is array(0 to 127) of std_logic_vector(31 downto 0);
---signal OAM : Oam_t;
---type Hoam_t is array(0 to 127) of std_logic_vector(1 downto 0);
---signal HOAM : Hoam_t;
-
 -- MATH
 signal SUBCOL : std_logic_vector(14 downto 0);
 signal MAIN_R, MAIN_G, MAIN_B	: unsigned(4 downto 0);
