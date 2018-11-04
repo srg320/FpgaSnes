@@ -15,8 +15,8 @@ set_clock_groups -exclusive -group [get_clocks {pll|altpll_component|auto_genera
 set_clock_groups -exclusive -group [get_clocks {pll|altpll_component|auto_generated|pll1|clk[2]}]
 set_clock_groups -exclusive -group [get_clocks {apupll|altpll_component|auto_generated|pll1|clk[0] smpclk }]
 
-set_clock_groups -exclusive -group [get_clocks {cx4pll|altpll_component|auto_generated|pll1|clk[0]}]
-set_clock_groups -exclusive -group [get_clocks {dspnpll|altpll_component|auto_generated|pll1|clk[0]}]
+set_clock_groups -exclusive -group [get_clocks {SMAP|cx4pll|altpll_component|auto_generated|pll1|clk[0]}]
+set_clock_groups -exclusive -group [get_clocks {SMAP|dspnpll|altpll_component|auto_generated|pll1|clk[0]}]
 
 set_false_path -from [get_registers {mcu:MCU|CTRL[*]}] -to [get_registers *]
 set_false_path -from [get_registers {mcu:MCU|DATA_OUT[*] }] -to [get_registers *]
