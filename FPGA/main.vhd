@@ -88,8 +88,8 @@ architecture rtl of main is
 	signal PA : std_logic_vector(7 downto 0);
 	signal PARD_N : std_logic;
 	signal PAWR_N : std_logic;
-	signal SYSCLK	: std_logic;
-	signal REFRESH	: std_logic;
+	signal SYSCLK : std_logic;
+	signal REFRESH : std_logic;
 
 	signal DOTCLK : std_logic;
 	signal HBLANK, VBLANK : std_logic;
@@ -128,7 +128,8 @@ architecture rtl of main is
 
 	-- DEBUG
 	signal DBG_BREAK, SNES_BRK, MAP_BRK : std_logic;
-	signal DBG_SNES_DAT, DBG_MAP_DAT	: std_logic_vector(7 downto 0);
+	signal MAP_DBG_WR : std_logic;
+	signal DBG_SNES_DAT, DBG_MAP_DAT : std_logic_vector(7 downto 0);
 
 begin
 
@@ -136,43 +137,43 @@ begin
 	pll : entity work.pll
 	port map(
 		inclk0	=> CLOCK_100(0),
-		c0			=> CLK_21M,
-		c1			=> CLK_LCD,
-		c2			=> CLK_SPI
+		c0		=> CLK_21M,
+		c1		=> CLK_LCD,
+		c2		=> CLK_SPI
 	);
 
 	apupll : entity work.apupll
 	port map(
 		inclk0	=> CLOCK_100(1),
-		c0			=> CLK_24M
+		c0		=> CLK_24M
 	);
 
 	-- MCU
 	MCU : entity work.mcu
 	port map(
 		CLK_SPI		=> CLK_SPI,
-		CLK			=> CLK_21M,
-		SCK			=> SCK,
-		MOSI 			=> MOSI,
-		MISO 			=> MISO,
-		SS 			=> SS,
-		STAT 			=> MCU_STAT,
-		CTRL 			=> MCU_CTRL,
-		DATA_IN 		=> MCU_DI,
+		CLK		=> CLK_21M,
+		SCK		=> SCK,
+		MOSI 		=> MOSI,
+		MISO 		=> MISO,
+		SS 		=> SS,
+		STAT 		=> MCU_STAT,
+		CTRL 		=> MCU_CTRL,
+		DATA_IN 	=> MCU_DI,
 		DATA_OUT 	=> MCU_DO,
 		
-		LD_ADDR 		=> MCU_LD_ADDR,
+		LD_ADDR 	=> MCU_LD_ADDR,
 		LD_WR 		=> MCU_LD_WR,
 		
-		DBG_SEL 		=> MCU_DBG_SEL,
-		DBG_REG 		=> MCU_DBG_REG,
+		DBG_SEL 	=> MCU_DBG_SEL,
+		DBG_REG 	=> MCU_DBG_REG,
 		DBG_DAT_IN 	=> MCU_DBG_DAT_IN,
 		DBG_DAT_OUT	=> MCU_DBG_DAT_OUT,
 		DBG_REG_WR 	=> MCU_DBG_REG_WR,
 		
 		MAP_CTRL 	=> MCU_MAP_CTRL,
 		MAP_ROM_MASK 	=> MCU_MAP_ROM_MASK,
-		MAP_BSRAM_MASK => MCU_MAP_BSRAM_MASK
+		MAP_BSRAM_MASK 	=> MCU_MAP_BSRAM_MASK
 	);
 
 	MCU_DI <= (others => '0');
@@ -198,78 +199,78 @@ begin
 
 	SNES : entity work.SNES
 	port map(
-		MCLK				=> CLK_21M,
-		DSPCLK			=> CLK_24M,
-		RST_N				=> RST_N,
-		ENABLE			=> ENABLE,
-		PAL				=> MCU_MAP_CTRL(7),
+		MCLK		=> CLK_21M,
+		DSPCLK		=> CLK_24M,
+		RST_N		=> RST_N,
+		ENABLE		=> ENABLE,
+		PAL		=> MCU_MAP_CTRL(7),
 		
-		CA     			=> CA,
-		CPURD_N			=> CPURD_N,
-		CPUWR_N			=> CPUWR_N,
+		CA     		=> CA,
+		CPURD_N		=> CPURD_N,
+		CPUWR_N		=> CPUWR_N,
 			
-		PA					=> PA,
-		PARD_N			=> PARD_N,
-		PAWR_N			=> PAWR_N,
-		DI					=> DI,
-		DO					=> DO,
+		PA		=> PA,
+		PARD_N		=> PARD_N,
+		PAWR_N		=> PAWR_N,
+		DI		=> DI,
+		DO		=> DO,
 			
-		RAMSEL_N			=> RAMSEL_N,
-		ROMSEL_N			=> ROMSEL_N,
+		RAMSEL_N	=> RAMSEL_N,
+		ROMSEL_N	=> ROMSEL_N,
 			
-		SYSCLK			=> SYSCLK,
-		REFRESH			=> REFRESH,
+		SYSCLK		=> SYSCLK,
+		REFRESH		=> REFRESH,
 			
-		IRQ_N				=> IRQ_N,
+		IRQ_N		=> IRQ_N,
 			
-		WSRAM_ADDR		=> WSRAM_ADDR,
-		WSRAM_DQ			=> WSRAM_DQ,
-		WSRAM_CE_N		=> WSRAM_CE_N,
-		WSRAM_OE_N		=> WSRAM_OE_N,
-		WSRAM_WE_N		=> WSRAM_WE_N,
+		WSRAM_ADDR	=> WSRAM_ADDR,
+		WSRAM_DQ	=> WSRAM_DQ,
+		WSRAM_CE_N	=> WSRAM_CE_N,
+		WSRAM_OE_N	=> WSRAM_OE_N,
+		WSRAM_WE_N	=> WSRAM_WE_N,
 			
-		VRAM_ADDRA		=> VRAM_ADDRA,
-		VRAM_ADDRB		=> VRAM_ADDRB,
-		VRAM_DAI			=> VRAM_DAI,
-		VRAM_DBI			=> VRAM_DBI,
-		VRAM_DAO			=> VRAM_DAO,
-		VRAM_DBO			=> VRAM_DBO,
-		VRAM_RD_N		=> VRAM_RD_N,
-		VRAM_WRA_N		=> VRAM_WRA_N,
-		VRAM_WRB_N		=> VRAM_WRB_N,
+		VRAM_ADDRA	=> VRAM_ADDRA,
+		VRAM_ADDRB	=> VRAM_ADDRB,
+		VRAM_DAI	=> VRAM_DAI,
+		VRAM_DBI	=> VRAM_DBI,
+		VRAM_DAO	=> VRAM_DAO,
+		VRAM_DBO	=> VRAM_DBO,
+		VRAM_RD_N	=> VRAM_RD_N,
+		VRAM_WRA_N	=> VRAM_WRA_N,
+		VRAM_WRB_N	=> VRAM_WRB_N,
 			
-		ARAM_ADDR		=> ARAM_ADDR,
-		ARAM_DQ			=> ASRAM_DQ,
-		ARAM_CE_N		=> ASRAM_CE_N,
-		ARAM_OE_N		=> ASRAM_OE_N,
-		ARAM_WE_N		=> ASRAM_WE_N,
+		ARAM_ADDR	=> ARAM_ADDR,
+		ARAM_DQ		=> ASRAM_DQ,
+		ARAM_CE_N	=> ASRAM_CE_N,
+		ARAM_OE_N	=> ASRAM_OE_N,
+		ARAM_WE_N	=> ASRAM_WE_N,
 			
-		JOY1_DI			=> JOY1_DI,
-		JOY2_DI			=> JOY2_DI,
-		JOY_STRB			=> JOY_STRB,
-		JOY1_CLK			=> JOY1_CLK,
-		JOY2_CLK			=> JOY2_CLK,
+		JOY1_DI		=> JOY1_DI,
+		JOY2_DI		=> JOY2_DI,
+		JOY_STRB	=> JOY_STRB,
+		JOY1_CLK	=> JOY1_CLK,
+		JOY2_CLK	=> JOY2_CLK,
 		
-		DOTCLK			=> DOTCLK,
-		HBLANK			=> HBLANK,
-		VBLANK			=> VBLANK,
+		DOTCLK		=> DOTCLK,
+		HBLANK		=> HBLANK,
+		VBLANK		=> VBLANK,
 			
-		RGB_OUT			=> RGB_OUT,
-		FRAME_OUT		=> FRAME_OUT,
-		X_OUT				=> X_OUT,
-		Y_OUT				=> Y_OUT,
-		V224_MODE		=> V224_MODE,
+		RGB_OUT		=> RGB_OUT,
+		FRAME_OUT	=> FRAME_OUT,
+		X_OUT		=> X_OUT,
+		Y_OUT		=> Y_OUT,
+		V224_MODE	=> V224_MODE,
 			
-		LRCK				=> LRCK,
-		BCK				=> BCK,
-		SDAT				=> SDAT,
+		LRCK		=> LRCK,
+		BCK		=> BCK,
+		SDAT		=> SDAT,
 		
-		DBG_SEL			=> MCU_DBG_SEL,
-		DBG_REG			=> MCU_DBG_REG,
-		DBG_REG_WR		=> MCU_DBG_REG_WR,
-		DBG_DAT_IN		=> MCU_DBG_DAT_OUT,
-		DBG_DAT_OUT		=> DBG_SNES_DAT,
-		DBG_BREAK		=> SNES_BRK
+		DBG_SEL		=> MCU_DBG_SEL,
+		DBG_REG		=> MCU_DBG_REG,
+		DBG_REG_WR	=> MCU_DBG_REG_WR,
+		DBG_DAT_IN	=> MCU_DBG_DAT_OUT,
+		DBG_DAT_OUT	=> DBG_SNES_DAT,
+		DBG_BREAK	=> SNES_BRK
 	);
 
 			  
@@ -299,71 +300,72 @@ begin
 
 	--Cartridge
 	CART_EN <= MCU_CTRL(6);
+	MAP_DBG_WR <= MCU_DBG_SEL(7) and MCU_DBG_REG_WR;
 
 	SMAP : entity work.LHRomMap
 	--SMAP : entity work.SDD1Map
 	--SMAP : entity work.DSPMap
 	--SMAP : entity work.CX4Map
 	port map(
-		CLK100			=> CLOCK_100(2),
-		MCLK				=> CLK_21M,
-		RST_N				=> RST_N,
-		ENABLE			=> ENABLE,
+		CLK100		=> CLOCK_100(2),
+		MCLK		=> CLK_21M,
+		RST_N		=> RST_N,
+		ENABLE		=> ENABLE,
 		
-		CA					=> CA,
-		DI					=> DO,
-		DO					=> DI,
-		CPURD_N			=> CPURD_N,
-		CPUWR_N			=> CPUWR_N,
+		CA		=> CA,
+		DI		=> DO,
+		DO		=> DI,
+		CPURD_N		=> CPURD_N,
+		CPUWR_N		=> CPUWR_N,
 		
-		PA					=> PA,
-		PARD_N			=> PARD_N,
-		PAWR_N			=> PAWR_N,
+		PA		=> PA,
+		PARD_N		=> PARD_N,
+		PAWR_N		=> PAWR_N,
 		
-		ROMSEL_N			=> ROMSEL_N,
-		RAMSEL_N			=> RAMSEL_N,
+		ROMSEL_N	=> ROMSEL_N,
+		RAMSEL_N	=> RAMSEL_N,
 		
-		SYSCLK			=> SYSCLK,
-		REFRESH			=> REFRESH,
+		SYSCLK		=> SYSCLK,
+		REFRESH		=> REFRESH,
 
-		IRQ_N				=> IRQ_N,
+		IRQ_N		=> IRQ_N,
 		
-		SRAM1_ADDR		=> CART_SRAM_ADDR,
-		SRAM1_DQ			=> CART_SRAM_DQ,
-		SRAM1_CE_N		=> CART_SRAM_CE_N,
-		SRAM1_OE_N		=> CART_SRAM_OE_N,
-		SRAM1_WE_N		=> CART_SRAM_WE_N,
+		SRAM1_ADDR	=> CART_SRAM_ADDR,
+		SRAM1_DQ	=> CART_SRAM_DQ,
+		SRAM1_CE_N	=> CART_SRAM_CE_N,
+		SRAM1_OE_N	=> CART_SRAM_OE_N,
+		SRAM1_WE_N	=> CART_SRAM_WE_N,
 		
-		SRAM2_ADDR		=> CART_SRAM2_ADDR,
-		SRAM2_DQ			=> CART_SRAM2_DQ,
-		SRAM2_CE_N		=> CART_SRAM2_CE_N,
-		SRAM2_OE_N		=> CART_SRAM2_OE_N,
-		SRAM2_WE_N		=> CART_SRAM2_WE_N,
+		SRAM2_ADDR	=> CART_SRAM2_ADDR,
+		SRAM2_DQ	=> CART_SRAM2_DQ,
+		SRAM2_CE_N	=> CART_SRAM2_CE_N,
+		SRAM2_OE_N	=> CART_SRAM2_OE_N,
+		SRAM2_WE_N	=> CART_SRAM2_WE_N,
 		
-		MAP_CTRL			=> MCU_MAP_CTRL,
-		ROM_MASK			=> MCU_MAP_ROM_MASK,
-		BSRAM_MASK		=> MCU_MAP_BSRAM_MASK,
+		MAP_CTRL	=> MCU_MAP_CTRL,
+		ROM_MASK	=> MCU_MAP_ROM_MASK,
+		BSRAM_MASK	=> MCU_MAP_BSRAM_MASK,
 		
 		LD_ADDR     	=> MCU_LD_ADDR,
-		LD_DI     		=> MCU_DO,
-		LD_WR     		=> MCU_LD_WR,
-		LD_EN     		=> CART_EN,
+		LD_DI     	=> MCU_DO,
+		LD_WR     	=> MCU_LD_WR,
+		LD_EN     	=> CART_EN,
 		
-		BRK_OUT			=> MAP_BRK,
-		DBG_REG  		=> MCU_DBG_REG,
-		DBG_DAT_IN		=> MCU_DBG_DAT_OUT,
-		DBG_DAT_OUT		=> DBG_MAP_DAT,
-		DBG_DAT_WR		=> MCU_DBG_REG_WR
+		BRK_OUT		=> MAP_BRK,
+		DBG_REG  	=> MCU_DBG_REG,
+		DBG_DAT_IN	=> MCU_DBG_DAT_OUT,
+		DBG_DAT_OUT	=> DBG_MAP_DAT,
+		DBG_DAT_WR	=> MAP_DBG_WR
 	);
 
 
 	lcd : entity work.lcd
 	port map(
 		CLK		=> CLK_21M,
-		LCDCLK	=> CLK_LCD,
+		LCDCLK		=> CLK_LCD,
 		RST_N		=> RST_N,
 		FRAME		=> FRAME_OUT,
-		PIX_IN	=> RGB_OUT,
+		PIX_IN		=> RGB_OUT,
 		PPU_X		=> X_OUT,
 		PPU_Y		=> Y_OUT,
 		V224		=> V224_MODE,
@@ -371,18 +373,18 @@ begin
 		LCD_R		=> LCD_R,
 		LCD_G		=> LCD_G,
 		LCD_B		=> LCD_B,
-		LCD_DE	=> LCD_DE,
-		LCD_HS	=> LCD_HS,
-		LCD_VS	=> LCD_VS,
+		LCD_DE		=> LCD_DE,
+		LCD_HS		=> LCD_HS,
+		LCD_VS		=> LCD_VS,
 		LCD_DISP	=> LCD_DISP
 	);
 
 
 	ddio1 : entity work.ddio
 	port map(
-		datain_h		=> "1",
-		datain_l		=> "0",
-		outclock		=> CLK_LCD,
+		datain_h	=> "1",
+		datain_l	=> "0",
+		outclock	=> CLK_LCD,
 		dataout		=> DDIO_OUT
 	);
 
