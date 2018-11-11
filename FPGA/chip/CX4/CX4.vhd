@@ -201,13 +201,13 @@ begin
 	
 	process(CLK, RST_N, WR_Nr, RAMIO_SEL, MMIO_SEL)
 	begin
-		if WR_Nr = "1100" and MMIO_SEL = '1' then
+		if WR_Nr = "1000" and MMIO_SEL = '1' then
 			MMIO_WR <= '1';
 		else
 			MMIO_WR <= '0';
 		end if;
 		
-		if WR_Nr = "1100" and RAMIO_SEL = '1' then
+		if WR_Nr = "1000" and RAMIO_SEL = '1' then
 			RAMIO_WR <= '1';
 		else
 			RAMIO_WR <= '0';
